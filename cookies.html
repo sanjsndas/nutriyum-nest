@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriyumNest — Cookie Policy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5DC; /* Warm Oatmeal Beige */
+            color: #333;
+        }
+        .text-leaf-green { color: #81C784; }
+        .bg-leaf-green { background-color: #81C784; }
+        .text-warm-oatmeal-beige { color: #F5F5DC; }
+        .bg-warm-oatmeal-beige { background-color: #F5F5DC; }
+        .text-berry-plum { color: #8E44AD; }
+        .bg-berry-plum { background-color: #8E44AD; }
+        .text-cloud-white { color: #FFFFFF; }
+        .bg-cloud-white { background-color: #FFFFFF; }
+        .text-honey-amber { color: #FFB74D; }
+        .bg-honey-amber { background-color: #FFB74D; }
+
+        /* Custom styles for better readability and spacing */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8E44AD; /* Berry Plum */
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #FFB74D; /* Honey Amber */
+        }
+        .cookies-content {
+            background-color: #FFFFFF;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .cookies-content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #81C784; /* Leaf Green */
+            margin-bottom: 1rem;
+        }
+        .cookies-content h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #8E44AD; /* Berry Plum */
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .cookies-content p, .cookies-content ul, .cookies-content ol {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .cookies-content ul, .cookies-content ol {
+            padding-left: 1.5rem;
+        }
+        .cookies-content li {
+            margin-bottom: 0.5rem;
+        }
+        .cookies-content a {
+            color: #8E44AD; /* Berry Plum */
+            text-decoration: underline;
+        }
+        .cookies-content a:hover {
+            color: #FFB74D; /* Honey Amber */
+        }
+
+        /* Cookie Consent Dialogue Box */
+        #cookieConsentBox {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            z-index: 1000;
+            max-width: 90%;
+            text-align: center;
+        }
+        #cookieConsentBox p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+        #cookieConsentBox .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        #cookieConsentBox button {
+            background-color: #81C784; /* Leaf Green */
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        #cookieConsentBox button:hover {
+            background-color: #68A06A; /* Darker Leaf Green */
+            transform: translateY(-1px);
+        }
+        #cookieConsentBox button#declineCookies {
+            background-color: #FFB74D; /* Honey Amber */
+        }
+        #cookieConsentBox button#declineCookies:hover {
+            background-color: #E6A23C; /* Darker Honey Amber */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-cloud-white shadow-md py-4">
+        <div class="container flex justify-between items-center">
+            <div class="text-2xl font-bold text-leaf-green">NutriyumNest</div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-700 hover:text-honey-amber nav-link">Home</a></li>
+                    <li><a href="blog.html" class="text-gray-700 hover:text-honey-amber nav-link">Blog</a></li>
+                    <li><a href="privacy.html" class="text-gray-700 hover:text-honey-amber nav-link">Privacy</a></li>
+                    <li><a href="terms.html" class="text-gray-700 hover:text-honey-amber nav-link">Terms</a></li>
+                    <li><a href="cookies.html" class="text-gray-700 hover:text-honey-amber nav-link">Cookies</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-honey-amber nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cookie Policy Hero Section -->
+    <section class="relative bg-cover bg-center h-[300px] flex items-center justify-center text-center rounded-b-3xl overflow-hidden"
+        class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative z-10 text-cloud-white p-6 rounded-lg">
+            <h1 class="text-4xl font-bold mb-2">Cookie Policy</h1>
+            <p class="text-xl font-light">Understanding Our Use of Cookies</p>
+        </div>
+    </section>
+
+    <!-- Cookie Policy Content Section -->
+    <main class="container py-16">
+        <div class="cookies-content">
+            <h2>NutriyumNest Cookie Policy</h2>
+            <p><strong>Last Updated: July 7, 2025</strong></p>
+            <p>
+                Welcome to NutriyumNest. This Cookie Policy explains how NutriyumNest ("we", "us", "our") uses cookies and similar technologies on our website. By continuing to browse or use our website, you are agreeing to our use of cookies in accordance with this policy. We believe in transparency and want you to understand how these technologies work and how you can manage your preferences. Our aim is to enhance your experience while ensuring your privacy is respected. This policy provides a comprehensive overview of the different types of cookies we employ, their specific purposes, and the control you have over their use. We encourage you to read this policy in conjunction with our Privacy Policy for a complete understanding of how we handle your data.
+            </p>
+            <p>
+                The digital landscape is constantly evolving, and with it, the methods used to provide personalized and efficient online services. Cookies play a crucial role in this ecosystem, enabling websites to remember your preferences, analyze site performance, and deliver relevant content. At NutriyumNest, our use of cookies is primarily focused on improving your interaction with our platform, making your journey through our recipes and wellness insights as smooth and enjoyable as possible. We do not use cookies to collect sensitive personal information without your explicit consent, and any data collected is handled with the utmost care and security. Understanding this policy will empower you to make informed decisions about your online privacy while engaging with NutriyumNest.
+            </p>
+
+            <h3>1. What Are Cookies?</h3>
+            <p>
+                Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the owners of the site. Cookies can perform various functions, such as remembering your login details, storing your site preferences, or tracking your browsing activity for analytical purposes. They are essentially a website's memory, allowing it to recognize you and respond appropriately. Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser. The distinction between these types is important for understanding how long data may be retained on your device and for what purposes.
+            </p>
+            <p>
+                The technology behind cookies has evolved significantly since their inception. While the core function remains the same – storing small pieces of data – the sophistication with which they can be used has increased. This includes the ability to link browsing behavior across different sites (third-party cookies) or to manage complex user sessions. It's important to differentiate between cookies that are strictly necessary for a website's basic functionality and those used for more advanced purposes like analytics or advertising. Your ability to control these different categories of cookies is a key aspect of digital privacy, and we aim to provide you with clear guidance on how to exercise that control effectively.
+            </p>
+
+            <h3>2. How We Use Cookies</h3>
+            <p>
+                NutriyumNest uses cookies for several purposes, all designed to enhance your experience and improve our Service. Our cookie usage falls into several categories, each serving a distinct function to ensure the smooth operation and continuous improvement of our website. We are transparent about these uses so you can understand the value they bring to your interaction with NutriyumNest.
+            </p>
+            <ul>
+                <li><strong>Strictly Necessary Cookies:</strong> These cookies are essential for the operation of our website. They enable you to navigate around the site and use its features, such as accessing secure areas or adding items to a shopping cart (if applicable). Without these cookies, services you have asked for cannot be provided. For example, they might remember your login status or maintain your session as you move between pages.</li>
+                <li><strong>Performance and Analytics Cookies:</strong> These cookies collect information about how you use our website, such as which pages you visit most often, and if you get error messages from web pages. These cookies don't collect information that identifies a visitor. All information these cookies collect is aggregated and therefore anonymous. It is only used to improve how our website works. They help us understand user behavior, identify popular content, and optimize site performance.</li>
+                <li><strong>Functionality Cookies:</strong> These cookies allow our website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features. For instance, they might remember your dietary preferences for recipe recommendations or save your search settings. The information these cookies collect may be anonymized, and they cannot track your browsing activity on other websites.</li>
+                <li><strong>Targeting/Advertising Cookies:</strong> These cookies are used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement and help measure the effectiveness of advertising campaigns. They are usually placed by advertising networks with the website operator’s permission. They remember that you have visited a website and this information may be shared with other organizations, such as advertisers.</li>
+            </ul>
+
+            <h3>3. Detailed Cookie Points and Your Choices</h3>
+            <p>
+                Understanding your choices regarding cookies is crucial for managing your online privacy. Below are 40 detailed points explaining various aspects of cookies, their implications, and how you can manage them. Each point is designed to provide comprehensive information, empowering you to make informed decisions about your cookie preferences on NutriyumNest and beyond.
+            </p>
+
+            <ol>
+                <li>
+                    <h4>1. What is a First-Party Cookie?</h4>
+                    <p>
+                        A first-party cookie is a cookie that is set by the website you are visiting (i.e., NutriyumNest.com). These cookies are generally considered more secure and are often used for essential website functions. They help us remember your preferences, like language settings or login status, directly on our site. This means the data collected by these cookies is only accessible by NutriyumNest, enhancing your direct interaction with our services. They are fundamental to providing a seamless and personalized browsing experience without involving external entities.
+                    </p>
+                    <p>
+                        For example, if you log into your NutriyumNest account, a first-party cookie will remember that you are logged in, so you don't have to re-enter your credentials every time you navigate to a new page within our site. This significantly improves user convenience and efficiency. Another common use is remembering your specific site preferences, such as your chosen recipe filters or display settings, ensuring that your next visit is tailored to your previous choices. These cookies are integral to the core functionality and user-friendliness of NutriyumNest. They are designed to enhance your direct experience with our platform.
+                    </p>
+                </li>
+                <li>
+                    <h4>2. What is a Third-Party Cookie?</h4>
+                    <p>
+                        A third-party cookie is a cookie that is set by a domain other than the one you are visiting. These cookies are typically used for cross-site tracking, retargeting, and advertising purposes. When you visit NutriyumNest, a third-party cookie might be placed on your device by an advertising partner or an analytics service like Google Analytics. These cookies allow the third party to collect information about your browsing behavior across different websites.
+                    </p>
+                    <p>
+                        For instance, if we use a third-party advertising network, that network might place a cookie on your device to track which ads you've seen and interacted with, not just on NutriyumNest but also on other websites that use the same network. This enables them to build a profile of your interests and show you more relevant ads. While these cookies are not directly controlled by NutriyumNest, we choose our partners carefully to ensure they adhere to privacy standards. You have greater control over these cookies through your browser settings or specific opt-out mechanisms.
+                    </p>
+                </li>
+                <li>
+                    <h4>3. What is a Session Cookie?</h4>
+                    <p>
+                        A session cookie is a temporary cookie that is stored in your computer's memory only for the duration of your visit to a website. It is deleted automatically when you close your web browser. Session cookies are crucial for the basic functionality of many websites, allowing them to remember your actions within a single browsing session.
+                    </p>
+                    <p>
+                        On NutriyumNest, a session cookie might be used to keep you logged in as you navigate from one recipe page to another, or to remember items you've added to a temporary list. Without session cookies, every time you clicked a new link on our site, the website would treat you as a completely new visitor, requiring you to re-authenticate or re-select preferences. They are vital for maintaining the continuity of your browsing experience during a single visit.
+                    </p>
+                </li>
+                <li>
+                    <h4>4. What is a Persistent Cookie?</h4>
+                    <p>
+                        A persistent cookie, also known as a "stored cookie," remains on your device for a set period, even after you close your browser. This period can range from a few minutes to several years, depending on the cookie's purpose. Persistent cookies are used to remember your preferences or actions over multiple visits to a website.
+                    </p>
+                    <p>
+                        For example, if you choose to "remember me" on a login page, a persistent cookie will store your login details so you don't have to enter them every time you visit NutriyumNest. They are also used for analytics, allowing us to understand long-term user behavior trends, such as how often you return to our site or which content you frequently revisit. These cookies are designed to enhance your long-term experience and provide valuable insights for site improvement.
+                    </p>
+                </li>
+                <li>
+                    <h4>5. What are Strictly Necessary Cookies?</h4>
+                    <p>
+                        Strictly necessary cookies are essential for a website to function correctly. They enable core functionalities such as security, network management, and accessibility. These cookies do not store any personally identifiable information and are usually set only in response to actions made by you that amount to a request for services, such as setting your privacy preferences, logging in, or filling out forms.
+                    </p>
+                    <p>
+                        Without these cookies, certain parts of NutriyumNest may not function properly. For example, if you try to log into your account without strictly necessary cookies, the website wouldn't be able to authenticate your session, preventing access. These cookies are typically exempt from consent requirements in many privacy regulations because their purpose is solely to enable the transmission of a communication over an electronic communications network, or to provide an information society service explicitly requested by the user.
+                    </p>
+                </li>
+                <li>
+                    <h4>6. What are Performance Cookies?</h4>
+                    <p>
+                        Performance cookies collect information about how visitors use a website, such as which pages are visited most often, and if they get error messages from web pages. These cookies help website owners understand and improve the performance of their sites. The information collected is aggregated and anonymous, meaning it cannot be used to identify individual users.
+                    </p>
+                    <p>
+                        At NutriyumNest, performance cookies help us identify which recipes are most popular, how users navigate through our blog, or if there are any broken links or slow-loading pages. This data is invaluable for optimizing our website's structure, content, and user experience. By understanding general user behavior, we can make informed decisions to enhance the overall quality and efficiency of our Service without tracking your personal identity.
+                    </p>
+                </li>
+                <li>
+                    <h4>7. What are Functionality Cookies?</h4>
+                    <p>
+                        Functionality cookies allow a website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features. These cookies can also be used to remember changes you have made to text size, fonts, and other parts of web pages that you can customize. They aim to provide a more personalized and convenient experience.
+                    </p>
+                    <p>
+                        For example, on NutriyumNest, a functionality cookie might remember your preferred dietary filters (e.g., "vegetarian" or "gluten-free") so that you don't have to re-select them every time you visit the recipe library. They can also remember your consent to our cookie policy, preventing the consent banner from appearing on every visit. While these cookies enhance personalization, the information they collect is generally anonymized and does not track your browsing activity on other websites.
+                    </p>
+                </li>
+                <li>
+                    <h4>8. What are Targeting/Advertising Cookies?</h4>
+                    <p>
+                        Targeting or advertising cookies are used to deliver advertisements that are more relevant to you and your interests. They are also used to limit the number of times you see an advertisement and help measure the effectiveness of advertising campaigns. These cookies typically track your browsing habits across different websites to build a profile of your interests.
+                    </p>
+                    <p>
+                        When you visit NutriyumNest, third-party advertising partners might place these cookies to understand what content you engage with. This information is then used to show you ads for products or services that might appeal to you, both on NutriyumNest and on other websites you visit. These cookies are often linked to site functionality provided by the other organization. You usually have significant control over these cookies through your browser settings or specific opt-out tools provided by advertising networks.
+                    </p>
+                </li>
+                <li>
+                    <h4>9. What is Cookie Consent?</h4>
+                    <p>
+                        Cookie consent refers to the explicit permission a website user gives for cookies to be stored on their device. This is a legal requirement in many jurisdictions, such as under the GDPR in Europe. Websites must inform users about the types of cookies they use and their purposes before placing non-essential cookies.
+                    </p>
+                    <p>
+                        On NutriyumNest, when you first visit, you will see a cookie consent banner asking for your permission to use certain types of cookies. You will typically have options to accept all cookies, decline non-essential cookies, or customize your preferences. This process ensures that you have control over your data and that our website operates in compliance with privacy regulations. Your choice is recorded, usually by a cookie, so you are not asked again on subsequent visits unless your preferences expire or are cleared.
+                    </p>
+                </li>
+                <li>
+                    <h4>10. How to Accept Cookies?</h4>
+                    <p>
+                        To accept cookies on NutriyumNest, you typically interact with the cookie consent banner that appears upon your first visit. This banner will usually have a button labeled "Accept All Cookies," "Agree," or similar. Clicking this button signifies your consent for us to place all types of cookies (including analytics, functionality, and advertising cookies) on your device.
+                    </p>
+                    <p>
+                        By accepting, you enable NutriyumNest to provide you with the fullest and most personalized experience, including tailored content recommendations and optimized site performance. Your preference is then stored, often in a persistent cookie, so that the banner does not reappear on every subsequent visit, making your browsing experience seamless. You can usually change your mind and withdraw consent at any time through your browser settings or a link provided in our Cookie Policy.
+                    </p>
+                </li>
+                <li>
+                    <h4>11. How to Decline Cookies?</h4>
+                    <p>
+                        To decline cookies on NutriyumNest, you can interact with the cookie consent banner by selecting an option like "Decline All," "Reject Non-Essential," or "Manage Preferences." If you choose to decline all, only strictly necessary cookies will be placed on your device, as these are essential for the basic operation of the website.
+                    </p>
+                    <p>
+                        Declining non-essential cookies means that features relying on these cookies (e.g., personalized ads, advanced analytics, some saved preferences) may not function as intended. While your core browsing experience will remain, certain personalized elements might be absent. Your choice to decline is also recorded, typically by a cookie, to prevent the banner from reappearing. This gives you control over your data privacy.
+                    </p>
+                </li>
+                <li>
+                    <h4>12. How to Manage Cookie Preferences?</h4>
+                    <p>
+                        Managing cookie preferences allows you to selectively choose which types of cookies you want to allow. On NutriyumNest's cookie consent banner, there is usually an option like "Manage Preferences," "Customize," or "Cookie Settings." Clicking this will open a more detailed panel where you can toggle different categories of cookies (e.g., analytics, functionality, advertising) on or off.
+                    </p>
+                    <p>
+                        This granular control empowers you to tailor your privacy settings to your comfort level. For example, you might choose to allow functionality cookies to save your preferences but decline advertising cookies. After making your selections, you typically click a "Save Preferences" or "Confirm Choices" button. These preferences are then stored, enabling a personalized yet privacy-conscious browsing experience. You can revisit these settings at any time, often via a link in the website's footer or within your account settings.
+                    </p>
+                </li>
+                <li>
+                    <h4>13. How to Delete Cookies from Your Browser?</h4>
+                    <p>
+                        You can delete cookies from your web browser at any time. The process varies slightly depending on the browser you use (e.g., Chrome, Firefox, Safari, Edge). Generally, you can find this option in your browser's settings under "Privacy," "Security," or "History." Look for options like "Clear browsing data," "Cookies and other site data," or "Clear history."
+                    </p>
+                    <p>
+                        Deleting cookies will remove all stored cookies from your device, including those from NutriyumNest and other websites you've visited. This means you will likely be logged out of websites, and any saved preferences will be reset. While it provides a fresh start, it also means you might see cookie consent banners again on sites you've previously visited. It's a powerful tool for managing your digital footprint.
+                    </p>
+                </li>
+                <li>
+                    <h4>14. How to Block Cookies in Your Browser?</h4>
+                    <p>
+                        Most web browsers allow you to block cookies entirely or block specific types of cookies (e.g., third-party cookies). This setting is usually found in your browser's privacy or security settings. By blocking cookies, you prevent websites from placing them on your device in the first place.
+                    </p>
+                    <p>
+                        However, blocking all cookies can significantly impact your browsing experience. Many websites, including NutriyumNest, rely on cookies for basic functionality. If you block all cookies, you might find that certain features don't work, or you may be unable to log in or save preferences. It's often recommended to block third-party cookies while allowing first-party cookies for a balance between privacy and functionality.
+                    </p>
+                </li>
+                <li>
+                    <h4>15. Do Cookies Store Personal Information?</h4>
+                    <p>
+                        Cookies themselves are typically small text files that contain a unique identifier. They do not directly store your name, email address, or other sensitive personal information in a readable format. However, they can store a unique ID that, when combined with other data held by the website or a third party, can be linked to your personal information.
+                    </p>
+                    <p>
+                        For example, a cookie might store a unique user ID. When you log into NutriyumNest, this ID is associated with your account details on our server. So, while the cookie itself doesn't contain your name, it acts as a key to access your personalized data. The extent to which cookies are linked to personal information depends on the website's data handling practices and applicable privacy laws.
+                    </p>
+                </li>
+                <li>
+                    <h4>16. What is a Cookie Banner?</h4>
+                    <p>
+                        A cookie banner (or consent banner) is the pop-up notification or bar that appears on a website, typically upon your first visit, informing you about the website's use of cookies and asking for your consent. These banners are a common sight due to privacy regulations like GDPR and CCPA.
+                    </p>
+                    <p>
+                        The NutriyumNest cookie banner provides you with options to accept, decline, or manage your cookie preferences before non-essential cookies are placed on your device. It serves as the primary interface for you to exercise your control over cookie usage and ensures that we comply with legal requirements regarding user consent.
+                    </p>
+                </li>
+                <li>
+                    <h4>17. How Long Do Cookies Last?</h4>
+                    <p>
+                        The lifespan of a cookie varies greatly. Session cookies only last for the duration of your browsing session and are deleted when you close your browser. Persistent cookies, on the other hand, can remain on your device for a specified period, ranging from a few minutes to several years.
+                    </p>
+                    <p>
+                        The expiration date of a persistent cookie is set by the website that places it. For instance, a cookie remembering your login might last for 30 days, while an analytics cookie might last for two years. You can often see the expiration dates of cookies stored on your device through your browser's developer tools or privacy settings.
+                    </p>
+                </li>
+                <li>
+                    <h4>18. What is a "Do Not Track" (DNT) Signal?</h4>
+                    <p>
+                        "Do Not Track" (DNT) is a web browser setting that sends a signal to websites indicating your preference not to be tracked. While some websites and advertising networks may honor this signal, it is not a universally adopted standard, and compliance is voluntary for most websites.
+                    </p>
+                    <p>
+                        NutriyumNest respects user privacy, but the effectiveness of DNT signals depends on the receiving website's implementation. For more robust control over tracking, we recommend using browser cookie settings or specific opt-out tools provided by advertising industry groups.
+                    </p>
+                </li>
+                <li>
+                    <h4>19. Are Cookies Safe?</h4>
+                    <p>
+                        Generally, cookies themselves are not inherently harmful. They are text files and cannot execute programs or deliver viruses. They also cannot access other information on your hard drive. The primary privacy concern with cookies arises when they are used to track your browsing activity across multiple websites without your explicit knowledge or consent, especially by third parties for advertising purposes.
+                    </p>
+                    <p>
+                        NutriyumNest uses cookies responsibly and transparently. We prioritize your privacy and aim to use cookies only in ways that enhance your experience or help us improve our service, while providing you with clear options to manage your preferences.
+                    </p>
+                </li>
+                <li>
+                    <h4>20. What is an HTTP Cookie?</h4>
+                    <p>
+                        An HTTP cookie is the most common type of cookie, referring to the small pieces of data that a server sends to the user's web browser. The browser may store it and send it back with the next request to the same server. This allows websites to remember stateful information or to record the user's browsing activity.
+                    </p>
+                    <p>
+                        All the cookies discussed in this policy (session, persistent, first-party, third-party) are types of HTTP cookies. They are fundamental to how the internet works and enable many of the interactive features you experience on websites like NutriyumNest.
+                    </p>
+                </li>
+                <li>
+                    <h4>21. What is a Secure Cookie?</h4>
+                    <p>
+                        A secure cookie is an HTTP cookie that has the "Secure" attribute set. This attribute tells the browser to send the cookie only over an encrypted HTTPS connection. This helps protect the cookie's data from being intercepted by unauthorized parties during transmission.
+                    </p>
+                    <p>
+                        NutriyumNest uses HTTPS for all data transmission, and our essential cookies are configured as secure cookies to ensure that your data is protected during its journey between your browser and our servers. This is a standard security practice to safeguard your information.
+                    </p>
+                </li>
+                <li>
+                    <h4>22. What is a HttpOnly Cookie?</h4>
+                    <p>
+                        An HttpOnly cookie is an HTTP cookie that has the "HttpOnly" attribute set. This attribute prevents client-side scripts (like JavaScript) from accessing the cookie's contents. This makes the cookie more secure against certain types of cyberattacks, such as cross-site scripting (XSS).
+                    </p>
+                    <p>
+                        By making a cookie HttpOnly, even if an attacker manages to inject malicious script into a webpage, they cannot steal the cookie's information. NutriyumNest utilizes HttpOnly cookies for sensitive information, such as session IDs, to enhance the security of your browsing experience and protect your account.
+                    </p>
+                </li>
+                <li>
+                    <h4>23. What is a SameSite Cookie?</h4>
+                    <p>
+                        A SameSite cookie is an HTTP cookie that has the "SameSite" attribute set, which helps prevent cross-site request forgery (CSRF) attacks. This attribute controls when cookies are sent with cross-site requests. There are three values: "Strict," "Lax," and "None."
+                    </p>
+                    <p>
+                        "Strict" means cookies are only sent with requests from the same site. "Lax" sends cookies with same-site requests and top-level navigations. "None" sends cookies with all requests, but requires the "Secure" attribute. NutriyumNest configures SameSite attributes to enhance security and comply with modern browser standards, reducing the risk of certain web vulnerabilities.
+                    </p>
+                </li>
+                <li>
+                    <h4>24. What is a Supercookie?</h4>
+                    <p>
+                        A supercookie is a tracking mechanism that is more difficult for users to detect and delete than traditional cookies. They are often stored in locations outside of the browser's standard cookie storage, such as HTTP Strict Transport Security (HSTS) settings, browser cache, or Flash Local Shared Objects (LSOs).
+                    </p>
+                    <p>
+                        NutriyumNest does not use supercookies. Our commitment is to transparent and manageable cookie practices. We rely on standard HTTP cookies that can be easily controlled and deleted through your browser settings, ensuring you have full visibility and control over your data.
+                    </p>
+                </li>
+                <li>
+                    <h4>25. What is a Zombie Cookie?</h4>
+                    <p>
+                        A zombie cookie is a type of persistent cookie that automatically recreates itself after being deleted. This is often achieved by storing the cookie's information in multiple locations (e.g., Flash LSOs, HTML5 Web Storage, Silverlight Isolated Storage) and recreating it from these backups if the primary cookie is deleted.
+                    </p>
+                    <p>
+                        NutriyumNest does not use zombie cookies. Our cookie practices are designed to be straightforward and respectful of your choices. When you delete cookies from your browser, they are permanently removed from our control, aligning with our commitment to user privacy and transparent data handling.
+                    </p>
+                </li>
+                <li>
+                    <h4>26. What is HTML5 Web Storage (Local Storage & Session Storage)?</h4>
+                    <p>
+                        HTML5 Web Storage provides web applications with methods to store data locally within the user's browser. It includes "Local Storage" (persistent, no expiration) and "Session Storage" (deleted when the browser tab is closed). While not technically "cookies," they serve similar purposes for data persistence.
+                    </p>
+                    <p>
+                        NutriyumNest may use Local Storage or Session Storage for certain functionalities, such as remembering temporary user inputs or UI states, to enhance your experience. Like cookies, you can typically manage or clear this data through your browser's developer tools or privacy settings. We use these technologies judiciously and transparently.
+                    </p>
+                </li>
+                <li>
+                    <h4>27. What is a Web Beacon (Pixel Tag)?</h4>
+                    <p>
+                        A web beacon, also known as a pixel tag or clear GIF, is a tiny graphic (usually 1x1 pixel) embedded invisibly on a web page or in an email. Web beacons are used to track user behavior, such as whether an email has been opened or if a page has been viewed.
+                    </p>
+                    <p>
+                        NutriyumNest may use web beacons in conjunction with cookies to gather anonymous data on site usage and email campaign effectiveness. For example, a web beacon in our newsletter might tell us if you opened the email, helping us refine our communication strategies. They do not directly store information on your device but work in conjunction with cookies to provide analytical insights.
+                    </p>
+                </li>
+                <li>
+                    <h4>28. What is a Flash Cookie (Local Shared Object)?</h4>
+                    <p>
+                        A Flash cookie, or Local Shared Object (LSO), is a data file stored by websites that use Adobe Flash. LSOs can store more data than regular HTTP cookies and are managed separately from browser cookies, making them harder to detect and delete through standard browser settings.
+                    </p>
+                    <p>
+                        NutriyumNest does not use Flash cookies. Our website is built using modern web technologies that do not rely on Flash, ensuring that all data storage mechanisms are transparent and easily manageable through your standard browser privacy controls. This simplifies your ability to control your online footprint when interacting with our site.
+                    </p>
+                </li>
+                <li>
+                    <h4>29. How Does Cookie Consent Work with Third Parties?</h4>
+                    <p>
+                        When you give consent for cookies on NutriyumNest, this consent extends to third-party cookies that we integrate into our site (e.g., from analytics providers, advertising partners). We use a Consent Management Platform (CMP) to manage these consents.
+                    </p>
+                    <p>
+                        The CMP communicates your preferences to these third parties, instructing them whether or not to place their cookies on your device. While we strive to ensure compliance, the ultimate responsibility for honoring your preferences rests with the third-party providers. We select reputable partners who are committed to data privacy.
+                    </p>
+                </li>
+                <li>
+                    <h4>30. Can I Use NutriyumNest Without Accepting Cookies?</h4>
+                    <p>
+                        Yes, you can use NutriyumNest without accepting non-essential cookies. If you decline cookies via our consent banner or through your browser settings, only strictly necessary cookies will be placed on your device.
+                    </p>
+                    <p>
+                        However, please be aware that declining non-essential cookies may impact your experience. Features that rely on these cookies, such as personalized content recommendations, saved preferences (beyond essential ones), or certain analytics-driven optimizations, may not function as intended or may be unavailable. Your core ability to browse recipes and read articles will remain, but the experience might be less tailored.
+                    </p>
+                </li>
+                <li>
+                    <h4>31. What are Analytics Cookies and Why Do We Use Them?</h4>
+                    <p>
+                        Analytics cookies are a type of performance cookie that helps us understand how visitors interact with NutriyumNest. They collect information such as the number of visitors, which pages are most popular, the source of traffic, and how long users spend on the site.
+                    </p>
+                    <p>
+                        We use analytics cookies to gain insights into user behavior, which enables us to continuously improve our website. For example, if we see that a certain recipe page has a high bounce rate, it might indicate that the content needs improvement. This data is aggregated and anonymized, meaning it doesn't identify you personally but helps us make data-driven decisions to enhance the overall user experience.
+                    </p>
+                </li>
+                <li>
+                    <h4>32. How Do We Ensure Your Cookie Choices Are Respected?</h4>
+                    <p>
+                        NutriyumNest uses a robust Consent Management Platform (CMP) to record and manage your cookie preferences. When you make a choice on our cookie banner, this choice is stored, typically in a first-party cookie, so that our website remembers your decision on subsequent visits.
+                    </p>
+                    <p>
+                        The CMP also integrates with third-party services to signal your preferences to them, instructing them to either place or withhold their respective cookies. We regularly audit our cookie implementation to ensure that your choices are effectively honored and that we remain compliant with applicable data protection regulations.
+                    </p>
+                </li>
+                <li>
+                    <h4>33. What Happens If I Clear My Browser's Cookies?</h4>
+                    <p>
+                        If you clear your browser's cookies, all cookies stored on your device, including those from NutriyumNest, will be deleted. This action effectively resets your cookie preferences for all websites.
+                    </p>
+                    <p>
+                        When you next visit NutriyumNest, you will likely see the cookie consent banner again, as your previous consent (stored in a cookie) will have been removed. You will need to make your cookie choices again. This provides you with a fresh start and complete control over your cookie settings whenever you choose to reset them.
+                    </p>
+                </li>
+                <li>
+                    <h4>34. Are Cookies Used for Security Purposes?</h4>
+                    <p>
+                        Yes, some cookies are used for security purposes. Strictly necessary cookies, for example, can help identify and prevent security risks. They might be used to detect fraudulent activity, verify user authenticity, or protect user data from unauthorized access.
+                    </p>
+                    <p>
+                        On NutriyumNest, security cookies help maintain the integrity of your session and protect your account from malicious activities. These cookies are vital for ensuring a safe browsing environment and are typically exempt from consent requirements due to their critical role in website security.
+                    </p>
+                </li>
+                <li>
+                    <h4>35. How Do Cookies Affect Website Performance?</h4>
+                    <p>
+                        Cookies generally have a minimal impact on website performance. They are small text files that are quickly loaded and processed by your browser. In fact, by remembering preferences and session information, cookies can often *improve* performance by reducing the need for the server to re-process information on every page load.
+                    </p>
+                    <p>
+                        However, having an excessive number of cookies, especially from many different third parties, can sometimes slightly slow down page loading times. NutriyumNest strives to optimize our cookie usage to ensure a fast and responsive website experience, balancing functionality with performance.
+                    </p>
+                </li>
+                <li>
+                    <h4>36. What is a Cookie Audit?</h4>
+                    <p>
+                        A cookie audit is a systematic process of identifying all cookies and similar tracking technologies used on a website. This involves scanning the website to discover all first-party and third-party cookies, understanding their purpose, and documenting their attributes (e.g., expiration, domain, security settings).
+                    </p>
+                    <p>
+                        NutriyumNest conducts regular cookie audits to ensure that our Cookie Policy accurately reflects our current cookie usage and that we remain compliant with evolving privacy regulations. This process helps us maintain transparency and provides you with accurate information about the data collected via cookies.
+                    </p>
+                </li>
+                <li>
+                    <h4>37. How Do Cookies Impact My Privacy?</h4>
+                    <p>
+                        Cookies impact your privacy primarily through their ability to track your online behavior and build profiles about your interests. While first-party cookies generally enhance your experience on a single site, third-party cookies can enable tracking across multiple websites, which can be a privacy concern for some users.
+                    </p>
+                    <p>
+                        NutriyumNest is committed to respecting your privacy. We aim to use cookies responsibly, provide clear information about their use, and offer robust mechanisms for you to control your preferences, empowering you to manage your privacy settings effectively.
+                    </p>
+                </li>
+                <li>
+                    <h4>38. What are the Legal Requirements for Cookies?</h4>
+                    <p>
+                        Legal requirements for cookies vary by jurisdiction. Key regulations include the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States. These laws generally require websites to:
+                    </p>
+                    <ul>
+                        <li>Inform users about the use of cookies.</li>
+                        <li>Obtain explicit consent for non-essential cookies before placing them.</li>
+                        <li>Provide clear information about the types and purposes of cookies.</li>
+                        <li>Offer users the ability to accept, decline, or manage cookie preferences.</li>
+                        <li>Ensure easy withdrawal of consent.</li>
+                    </ul>
+                    <p>
+                        NutriyumNest strives to comply with these and other applicable data protection laws to ensure your privacy rights are upheld.
+                    </p>
+                </li>
+                <li>
+                    <h4>39. How Can I Report a Cookie-Related Concern?</h4>
+                    <p>
+                        If you have any concerns or questions about NutriyumNest's use of cookies, or if you believe there has been a breach of our Cookie Policy, we encourage you to contact us directly. Your feedback is important for maintaining our commitment to transparency and privacy.
+                    </p>
+                    <p>
+                        Please email us at <a href="mailto:privacy@nutriyumnest.com" class="text-berry-plum hover:underline">privacy@nutriyumnest.com</a> with "Cookie Policy Concern" in the subject line. Provide as much detail as possible regarding your concern, including specific examples or observations. Our team will investigate your report promptly and take appropriate action to address any issues.
+                    </p>
+                </li>
+                <li>
+                    <h4>40. Future Changes to Our Cookie Policy</h4>
+                    <p>
+                        NutriyumNest may update this Cookie Policy from time to time to reflect changes in our practices, technology, or legal requirements. We will notify you of any material changes by posting the updated policy on this page and updating the "Last Updated" date at the top.
+                    </p>
+                    <p>
+                        We encourage you to review this Cookie Policy periodically to stay informed about how we use cookies and your related rights. Your continued use of the Service after any modifications signifies your acceptance of the revised policy. We are committed to keeping you informed and ensuring our practices remain transparent and user-friendly.
+                    </p>
+                </li>
+            </ol>
+
+            <h3>4. Contact Us</h3>
+            <p>
+                If you have any questions about this Cookie Policy, please contact us:
+            </p>
+            <ul>
+                <li>By email: <a href="mailto:privacy@nutriyumnest.com" class="text-berry-plum hover:underline">privacy@nutriyumnest.com</a></li>
+                <li>By visiting this page on our website: <a href="contact.html" class="text-berry-plum hover:underline">Contact Us</a></li>
+                <li>By mail: 123 Wellness Way, Nourishville, NW 12345</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-berry-plum text-cloud-white py-8 mt-12 rounded-t-3xl">
+        <div class="container flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-xl font-bold mb-2">NutriyumNest</h4>
+                <p class="text-sm">Where Wellness Meets Every Bite.</p>
+                <p class="text-sm mt-2">© 2024 NutriyumNest. All rights reserved.</p>
+            </div>
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-lg font-semibold mb-2">Contact Us</h4>
+                <p class="text-sm">123 Wellness Way,</p>
+                <p class="text-sm">Nourishville, NW 12345</p>
+                <p class="text-sm">Email: info@nutriyumnest.com</p>
+                <p class="text-sm">Phone: (555) 123-4567</p>
+            </div>
+            <nav>
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="index.html" class="text-cloud-white hover:text-honey-amber nav-link">Home</a></li>
+                    <li><a href="blog.html" class="text-cloud-white hover:text-honey-amber nav-link">Blog</a></li>
+                    <li><a href="privacy.html" class="text-cloud-white hover:text-honey-amber nav-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="text-cloud-white hover:text-honey-amber nav-link">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="text-cloud-white hover:text-honey-amber nav-link">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="text-cloud-white hover:text-honey-amber nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Dialogue Box -->
+    <div id="cookieConsentBox">
+        <p>This website uses cookies to ensure you get the best experience on our website. For more details, please review our <a href="cookies.html" class="text-honey-amber hover:underline">Cookie Policy</a>.</p>
+        <div class="cookie-buttons">
+            <button id="acceptCookies">Accept All Cookies</button>
+            <button id="declineCookies">Decline Non-Essential</button>
+            <button id="manageCookies">Manage Preferences</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsentBox = document.getElementById('cookieConsentBox');
+            const acceptCookiesBtn = document.getElementById('acceptCookies');
+            const declineCookiesBtn = document.getElementById('declineCookies');
+            const manageCookiesBtn = document.getElementById('manageCookies');
+
+            // Check if cookie consent has been given
+            const consentGiven = localStorage.getItem('nutriyumnest_cookie_consent');
+
+            if (consentGiven) {
+                cookieConsentBox.style.display = 'none'; // Hide if already consented
+            } else {
+                cookieConsentBox.style.display = 'flex'; // Show if no consent
+            }
+
+            acceptCookiesBtn.addEventListener('click', function() {
+                localStorage.setItem('nutriyumnest_cookie_consent', 'accepted');
+                cookieConsentBox.style.display = 'none';
+                // In a real application, you would now load all cookies
+                console.log('Cookies accepted!');
+            });
+
+            declineCookiesBtn.addEventListener('click', function() {
+                localStorage.setItem('nutriyumnest_cookie_consent', 'declined');
+                cookieConsentBox.style.display = 'none';
+                // In a real application, you would only load strictly necessary cookies
+                console.log('Non-essential cookies declined!');
+            });
+
+            manageCookiesBtn.addEventListener('click', function() {
+                // In a real application, this would open a more detailed preference modal
+                // For this example, we'll just log and hide the banner
+                console.log('Manage preferences clicked. Redirecting or opening modal...');
+                // You might redirect to a section on this page or open a more complex modal
+                // For simplicity, we'll just hide the banner for now.
+                cookieConsentBox.style.display = 'none';
+                // Optionally, store a temporary state indicating user wants to manage
+                localStorage.setItem('nutriyumnest_cookie_consent', 'managed');
+            });
+        });
+    </script>
+
+</body>
+</html>

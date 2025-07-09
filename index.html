@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriyumNest — Where Wellness Meets Every Bite</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5DC; /* Warm Oatmeal Beige */
+            color: #333;
+        }
+        .text-leaf-green { color: #81C784; }
+        .bg-leaf-green { background-color: #81C784; }
+        .text-warm-oatmeal-beige { color: #F5F5DC; }
+        .bg-warm-oatmeal-beige { background-color: #F5F5DC; }
+        .text-berry-plum { color: #8E44AD; }
+        .bg-berry-plum { background-color: #8E44AD; }
+        .text-cloud-white { color: #FFFFFF; }
+        .bg-cloud-white { background-color: #FFFFFF; }
+        .text-honey-amber { color: #FFB74D; }
+        .bg-honey-amber { background-color: #FFB74D; }
+
+        /* Custom styles for better readability and spacing */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #8E44AD; /* Berry Plum */
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .recipe-card {
+            background-color: #FFFFFF;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+        .recipe-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        .recipe-content {
+            padding: 1.5rem;
+        }
+        .recipe-content h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #81C784; /* Leaf Green */
+            margin-bottom: 0.75rem;
+        }
+        .recipe-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        .disclaimer-text, .customer-satisfaction-text {
+            line-height: 1.8;
+            color: #444;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #FFB74D; /* Honey Amber */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-cloud-white shadow-md py-4">
+        <div class="container flex justify-between items-center">
+            <div class="text-2xl font-bold text-leaf-green">NutriyumNest</div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-700 hover:text-honey-amber nav-link">Home</a></li>
+                    <li><a href="blog.html" class="text-gray-700 hover:text-honey-amber nav-link">Blog</a></li>
+                    <li><a href="privacy.html" class="text-gray-700 hover:text-honey-amber nav-link">Privacy</a></li>
+                    <li><a href="terms.html" class="text-gray-700 hover:text-honey-amber nav-link">Terms</a></li>
+                    <li><a href="cookies.html" class="text-gray-700 hover:text-honey-amber nav-link">Cookies</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-honey-amber nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-[500px] flex items-center justify-center text-center rounded-b-3xl overflow-hidden"
+         class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative z-10 text-cloud-white p-6 rounded-lg">
+            <h1 class="text-5xl font-bold mb-4">NutriyumNest</h1>
+            <p class="text-3xl font-light mb-8">Where Wellness Meets Every Bite.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#recipes" class="bg-honey-amber text-cloud-white px-8 py-3 rounded-full text-lg font-medium hover:bg-opacity-90 transition duration-300 shadow-lg">Wholesome Recipes</a>
+                <a href="#wellness-tips" class="bg-leaf-green text-cloud-white px-8 py-3 rounded-full text-lg font-medium hover:bg-opacity-90 transition duration-300 shadow-lg">Meal Planning Tips</a>
+                <a href="#nutrition-know-how" class="bg-berry-plum text-cloud-white px-8 py-3 rounded-full text-lg font-medium hover:bg-opacity-90 transition duration-300 shadow-lg">Nutrition Know-How</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction to NutriyumNest -->
+    <section class="container py-16">
+        <h2 class="section-title">Welcome to NutriyumNest!</h2>
+        <p class="text-lg text-gray-700 mb-8 text-center max-w-3xl mx-auto disclaimer-text">
+            NutriyumNest is your cozy corner for balanced, joyful, and delicious real food. We simplify healthy eating, making it accessible and enjoyable. Our philosophy: every bite nourishes your body and soul.
+            <br><br>
+            Discover wholesome recipes for families, from quick dinners to delightful snacks, all with clear instructions. We offer practical meal planning tips and positive nutrition advice, focusing on sustainable habits and mindful eating.
+            <br><br>
+            What sets us apart is our gentle, positive approach. We focus on nourishing foods and the joy of cooking, steering clear of diet culture. Our "Nest Community" is a supportive space for sharing wellness journeys. NutriyumNest is a movement towards a balanced, joyful, and wholesome life. Welcome home – where wellness meets every bite.
+        </p>
+    </section>
+
+    <!-- Recipe Library -->
+    <section id="recipes" class="container py-16">
+        <h2 class="section-title">Wholesome Recipes for Real Life</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Recipe 1: Sunshine Smoothie Bowl -->
+            <div class="recipe-card">
+                <img src="p1.webp" alt="Sunshine Smoothie Bowl" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Sunshine Smoothie Bowl</h3>
+                    <p>
+                        Start your day with vibrant energy! This delightful smoothie bowl is packed with colorful fruits and superfoods. Customize with your favorite fruits, seeds, and toppings. Simple to prepare, ideal for busy mornings.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>1 ripe banana, frozen</li>
+                            <li>1 cup frozen mango chunks</li>
+                            <li>1/2 cup frozen pineapple chunks</li>
+                            <li>1/2 cup plant-based milk (almond, oat, or coconut)</li>
+                            <li>1 scoop vanilla plant-based protein powder (optional)</li>
+                            <li>1 tbsp chia seeds or flax seeds</li>
+                            <li>Optional: 1/4 avocado or 1 tbsp almond butter for creaminess</li>
+                        </ul>
+                        <strong>Toppings (choose your favorites):</strong>
+                        <ul>
+                            <li>Granola</li>
+                            <li>Fresh berries (strawberries, blueberries, raspberries)</li>
+                            <li>Sliced kiwi</li>
+                            <li>Shredded coconut</li>
+                            <li>Bee pollen</li>
+                            <li>Goji berries</li>
+                            <li>A drizzle of raw honey or maple syrup</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>Combine frozen banana, mango, pineapple, plant-based milk, protein powder (if using), chia/flax seeds, and optional avocado/almond butter in a high-speed blender.</li>
+                            <li>Blend on high until smooth and creamy. Add more milk, one tablespoon at a time, if needed.</li>
+                            <li>Pour into a bowl.</li>
+                            <li>Arrange your desired toppings.</li>
+                            <li>Serve immediately.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> Rich in fiber, vitamins C and A, and healthy fats. Protein and fiber keep you full and energized.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 2: Cozy Lentil Soup -->
+            <div class="recipe-card">
+                <img src="p2.webp" alt="Cozy Lentil Soup" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Cozy Lentil Soup</h3>
+                    <p>
+                        A warm, comforting, and deeply satisfying lentil soup. Easy to make, uses simple pantry staples, and packed with plant-based protein and fiber. Brown or green lentils provide essential nutrients. Tastes even better the next day and freezes beautifully.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>1 tbsp olive oil</li>
+                            <li>1 large onion, chopped</li>
+                            <li>2 carrots, diced</li>
+                            <li>2 celery stalks, diced</li>
+                            <li>3 cloves garlic, minced</li>
+                            <li>1 tsp ground cumin</li>
+                            <li>1/2 tsp ground coriander</li>
+                            <li>1/4 tsp turmeric powder</li>
+                            <li>1.5 cups brown or green lentils, rinsed</li>
+                            <li>6 cups vegetable broth</li>
+                            <li>1 (14.5 oz) can diced tomatoes, undrained</li>
+                            <li>1 bay leaf</li>
+                            <li>Salt and freshly ground black pepper to taste</li>
+                            <li>2 cups fresh spinach or kale, chopped (optional)</li>
+                            <li>Fresh parsley, chopped, for garnish (optional)</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>Heat olive oil in a large pot. Sauté onion, carrots, and celery for 8-10 minutes.</li>
+                            <li>Add garlic, cumin, coriander, and turmeric. Cook for 1-2 minutes.</li>
+                            <li>Stir in rinsed lentils, vegetable broth, diced tomatoes, and bay leaf. Bring to a boil.</li>
+                            <li>Reduce heat to low, cover, and simmer for 30-40 minutes.</li>
+                            <li>Remove bay leaf. Season with salt and pepper.</li>
+                            <li>If using, stir in spinach or kale and cook for 2-3 minutes.</li>
+                            <li>Serve hot.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> Excellent source of plant-based protein and fiber, rich in iron and vitamins.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 3: Speedy Salmon with Roasted Asparagus -->
+            <div class="recipe-card">
+                <img src="p3.webp" alt="Speedy Salmon with Roasted Asparagus" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Speedy Salmon with Roasted Asparagus</h3>
+                    <p>
+                        A nutritious and delicious meal in under 30 minutes! Packed with flavor, lean protein, and essential nutrients. Salmon is rich in Omega-3s, protein, and vitamins. Asparagus is high in fiber and vitamins. Both are seasoned with olive oil, lemon, salt, and pepper, then roasted on one sheet for minimal cleanup.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>2 (6 oz) salmon fillets, skin on or off</li>
+                            <li>1 bunch fresh asparagus, tough ends trimmed</li>
+                            <li>2 tbsp olive oil, divided</li>
+                            <li>1 lemon, half sliced for roasting, half for juice</li>
+                            <li>Salt and freshly ground black pepper to taste</li>
+                            <li>Optional: fresh dill or parsley for garnish</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>Preheat oven to 400°F (200°C). Line a baking sheet.</li>
+                            <li>Toss asparagus with 1 tbsp olive oil, salt, and pepper on the baking sheet.</li>
+                            <li>Place salmon fillets on the same sheet. Drizzle with remaining 1 tbsp olive oil, season, and top with lemon slices.</li>
+                            <li>Roast for 12-18 minutes until salmon flakes and asparagus is tender-crisp.</li>
+                            <li>Remove from oven. Squeeze fresh lemon juice over top.</li>
+                            <li>Serve immediately.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> Rich in Omega-3 fatty acids for heart and brain health, high-quality protein, and fiber from asparagus.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 4: Quinoa & Black Bean Salad -->
+            <div class="recipe-card">
+                <img src="p4.webp" alt="Quinoa and Black Bean Salad" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Vibrant Quinoa & Black Bean Salad</h3>
+                    <p>
+                        A powerhouse of nutrition and flavor, perfect for a light yet satisfying lunch or vibrant side. This plant-based salad combines wholesome quinoa (complete protein, fiber, minerals) with hearty black beans (protein, fiber). Fresh bell peppers, corn, red onion, and cilantro add color and nutrients. The zesty lime vinaigrette ties all flavors together. Easy to prepare and holds up beautifully for meal prepping.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>1 cup uncooked quinoa, rinsed</li>
+                            <li>2 cups vegetable broth or water</li>
+                            <li>1 (15-ounce) can black beans, rinsed and drained</li>
+                            <li>1 cup corn (fresh, frozen, or canned)</li>
+                            <li>1 red bell pepper, finely diced</li>
+                            <li>1/4 red onion, finely diced</li>
+                            <li>1/4 cup fresh cilantro, chopped</li>
+                        </ul>
+                        <strong>For the Lime Vinaigrette:</strong>
+                        <ul>
+                            <li>3 tbsp olive oil</li>
+                            <li>2 tbsp fresh lime juice</li>
+                            <li>1 tsp ground cumin</li>
+                            <li>1/2 tsp chili powder</li>
+                            <li>Salt and pepper to taste</li>
+                            <li>Optional: 1 tsp maple syrup or agave nectar for a touch of sweetness</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>Cook quinoa: Combine rinsed quinoa and broth/water in a saucepan. Bring to a boil, then simmer for 15 minutes. Fluff and cool.</li>
+                            <li>Prepare vegetables: Dice bell pepper and red onion. Chop cilantro.</li>
+                            <li>Make the dressing: Whisk olive oil, lime juice, cumin, chili powder, salt, pepper, and optional sweetener.</li>
+                            <li>Assemble: In a large bowl, combine cooled quinoa, black beans, corn, bell pepper, red onion, and cilantro.</li>
+                            <li>Pour dressing over salad and toss.</li>
+                            <li>Refrigerate for at least 30 minutes.</li>
+                            <li>Serve chilled or at room temperature.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> Complete plant-based protein, high in fiber, and packed with vitamins and minerals.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 5: Creamy Avocado Pasta -->
+            <div class="recipe-card">
+                <img src="p5.avif" alt="Creamy Avocado Pasta" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Creamy Avocado Pasta</h3>
+                    <p>
+                        A light yet satisfying, dairy-free pasta dish that's quick, wholesome, and flavorful. Ripe avocados create a luxurious, naturally creamy sauce, packed with healthy fats, fiber, and potassium. Fresh lemon juice adds tang, while garlic and basil provide aromatic depth. Use your favorite pasta. The sauce comes together while pasta cooks. Toss warm pasta with the fresh sauce immediately. Avoid reheating.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>8 oz pasta of your choice (whole-wheat recommended)</li>
+                            <li>2 ripe avocados, pitted and scooped out</li>
+                            <li>2 cloves garlic, minced</li>
+                            <li>1/4 cup fresh basil leaves, plus more for garnish</li>
+                            <li>2 tbsp fresh lemon juice</li>
+                            <li>2-4 tbsp reserved pasta water (as needed for consistency)</li>
+                            <li>Salt and freshly ground black pepper to taste</li>
+                            <li>Optional: cherry tomatoes, grilled chicken/shrimp, or chickpeas for added protein</li>
+                            <li>Optional: nutritional yeast for a cheesy flavor</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>Cook pasta al dente. Reserve 1/2 cup pasta water, then drain.</li>
+                            <li>In a food processor or blender, combine avocado, garlic, basil, and lemon juice. Blend until smooth.</li>
+                            <li>Add reserved pasta water, 1 tbsp at a time, until desired consistency. Season.</li>
+                            <li>Add warm pasta to a large bowl. Pour sauce over and toss immediately.</li>
+                            <li>Serve immediately, garnished as desired.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> Packed with healthy monounsaturated fats from avocado, fiber, and fresh herbs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 6: Berry Chia Pudding -->
+            <div class="recipe-card">
+                <img src="p6.avif" alt="Berry Chia Pudding" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Overnight Berry Chia Pudding</h3>
+                    <p>
+                        Effortless, healthy, and nutritious, perfect for busy mornings or a delightful snack. Chia seeds are powerhouses of fiber, Omega-3s, and plant-based protein. Use your favorite plant-based milk, natural sweetener, and vanilla. Mixed berries add antioxidants and sweetness. Simply combine ingredients, stir, and refrigerate overnight.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>1/4 cup chia seeds</li>
+                            <li>1 cup plant-based milk (almond, oat, or coconut)</li>
+                            <li>1-2 tbsp maple syrup or agave nectar (adjust to taste)</li>
+                            <li>1/2 tsp vanilla extract</li>
+                            <li>1/2 cup mixed berries (fresh or frozen), plus more for topping</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>In a jar, combine chia seeds, plant-based milk, sweetener, and vanilla extract. Stir well.</li>
+                            <li>Stir in the 1/2 cup of mixed berries.</li>
+                            <li>Cover and refrigerate for at least 4 hours or overnight.</li>
+                            <li>Stir before serving. Add more milk if too thick.</li>
+                            <li>Top with additional fresh berries, granola, nuts, or seeds if desired.</li>
+                            <li>Enjoy chilled.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> Excellent source of fiber, Omega-3 fatty acids, and plant-based protein. Berries add antioxidants and vitamins.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 7: Sheet Pan Chicken & Veggies -->
+            <div class="recipe-card">
+                <img src="p7.webp" alt="Sheet Pan Chicken and Veggies" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Effortless Sheet Pan Chicken & Veggies</h3>
+                    <p>
+                        Simplify dinner with this effortless sheet pan meal. Minimal cleanup, maximum deliciousness. Lean chicken provides high-quality protein. Colorful vegetables like broccoli, bell peppers, red onion, and zucchini are packed with vitamins and antioxidants. Tossed with olive oil and a savory herb blend, the ingredients roast to perfection. Great for meal prepping!
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>1.5 lbs boneless, skinless chicken breasts or thighs, cut into 1-inch pieces</li>
+                            <li>1 head broccoli, cut into florets</li>
+                            <li>1 red bell pepper, cut into strips</li>
+                            <li>1 small red onion, cut into wedges</li>
+                            <li>1 medium zucchini, cut into half-moons (optional)</li>
+                            <li>2 tbsp olive oil</li>
+                            <li>1 tsp dried oregano</li>
+                            <li>1 tsp garlic powder</li>
+                            <li>1/2 tsp dried thyme</li>
+                            <li>Salt and freshly ground black pepper to taste</li>
+                            <li>Optional: a squeeze of lemon juice after roasting</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>Preheat oven to 400°F (200°C). Line a large baking sheet.</li>
+                            <li>In a large bowl, combine chicken, broccoli, bell pepper, red onion, and zucchini (if using).</li>
+                            <li>Drizzle with olive oil and sprinkle with oregano, garlic powder, thyme, salt, and pepper. Toss to coat.</li>
+                            <li>Spread in a single layer on the baking sheet.</li>
+                            <li>Roast for 20-25 minutes, flipping halfway, until chicken is cooked and vegetables are tender-crisp.</li>
+                            <li>Remove from oven. Squeeze lemon juice if desired.</li>
+                            <li>Serve hot.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> Balanced meal with lean protein and nutrient-dense vegetables. High in vitamins and fiber.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 8: Apple Cinnamon Baked Oats -->
+            <div class="recipe-card">
+                <img src="p8.webp" alt="Apple Cinnamon Baked Oats" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Warm Apple Cinnamon Baked Oats</h3>
+                    <p>
+                        Transform your breakfast with comforting Apple Cinnamon Baked Oats. Hearty oats provide sustained energy and fiber. Sweet-tart apples and cozy cinnamon create a delightful flavor. Oats are rich in beta-glucan for heart health. Fresh diced apples soften beautifully, and cinnamon adds warmth. Use plant-based milk, natural sweetener, and vanilla. Perfect for meal prepping.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>1 cup rolled oats (old-fashioned)</li>
+                            <li>1 large apple, peeled, cored, and diced into small pieces</li>
+                            <li>1 tsp ground cinnamon, plus more for sprinkling</li>
+                            <li>1/4 tsp baking powder</li>
+                            <li>Pinch of salt</li>
+                            <li>1 cup plant-based milk (almond, oat, or soy)</li>
+                            <li>2 tbsp maple syrup or honey (adjust to taste)</li>
+                            <li>1/2 tsp vanilla extract</li>
+                            <li>Optional: 1 tbsp chia seeds or ground flax seeds</li>
+                            <li>Optional: 1/4 cup chopped walnuts or pecans</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>Preheat oven to 375°F (190°C). Lightly grease a small baking dish.</li>
+                            <li>In a medium bowl, combine oats, diced apple, cinnamon, baking powder, and salt.</li>
+                            <li>In a separate bowl, whisk plant-based milk, maple syrup/honey, and vanilla extract.</li>
+                            <li>Pour wet ingredients into dry and stir. Add optional seeds/nuts.</li>
+                            <li>Pour into baking dish and spread evenly.</li>
+                            <li>Bake for 25-30 minutes until set and golden.</li>
+                            <li>Remove from oven and cool slightly.</li>
+                            <li>Serve warm, optionally topped as desired.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> High in fiber for digestive health and sustained energy. Apples provide vitamins and antioxidants.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 9: Mediterranean Chickpea Salad -->
+            <div class="recipe-card">
+                <img src="p9.webp" alt="Mediterranean Chickpea Salad" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Zesty Mediterranean Chickpea Salad</h3>
+                    <p>
+                        Bring vibrant Mediterranean flavors to your table with this refreshing and satisfying salad. Bursting with fresh vegetables, hearty chickpeas, and a bright lemon-herb dressing. Chickpeas provide plant-based protein, fiber, and essential minerals. A colorful array of cucumber, cherry tomatoes, bell peppers, red onion, and Kalamata olives add nutrients. Easy to prepare and great for meal prep.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>2 (15-ounce) cans chickpeas, rinsed and drained</li>
+                            <li>1 large cucumber, diced</li>
+                            <li>1 pint cherry tomatoes, halved</li>
+                            <li>1/2 red bell pepper, diced</li>
+                            <li>1/4 red onion, thinly sliced</li>
+                            <li>1/2 cup Kalamata olives, pitted and halved</li>
+                            <li>1/4 cup fresh parsley, chopped</li>
+                            <li>2 tbsp fresh mint, chopped (optional, but highly recommended)</li>
+                        </ul>
+                        <strong>For the Lemon Vinaigrette:</strong>
+                        <ul>
+                            <li>3 tbsp extra virgin olive oil</li>
+                            <li>3 tbsp fresh lemon juice</li>
+                            <li>1 tsp dried oregano</li>
+                            <li>Salt and freshly ground black pepper to taste</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>In a large bowl, combine chickpeas, cucumber, cherry tomatoes, bell pepper, red onion, olives, parsley, and mint (if using).</li>
+                            <li>In a small bowl, whisk olive oil, lemon juice, oregano, salt, and pepper.</li>
+                            <li>Pour dressing over salad and toss.</li>
+                            <li>Refrigerate for at least 30 minutes.</li>
+                            <li>Serve chilled or at room temperature.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> High in plant-based protein and fiber from chickpeas. Packed with vitamins, minerals, and antioxidants.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recipe 10: Sweet Potato & Kale Hash -->
+            <div class="recipe-card">
+                <img src="p10.webp" alt="Sweet Potato and Kale Hash" class="recipe-image">
+                <div class="recipe-content">
+                    <h3>Hearty Sweet Potato & Kale Hash</h3>
+                    <p>
+                        Elevate your breakfast or brunch with this vibrant and flavorful hash. A wholesome alternative packed with nutrient-dense vegetables. Sweet potatoes provide complex carbs, vitamins, and fiber. Kale adds powerful vitamins and antioxidants. Aromatic onions, garlic, and smoked paprika enhance flavor. Top with an egg for a complete meal, or add black beans/tofu for plant-based. Easy to prepare, adaptable with other vegetables or spices.
+                        <br><br>
+                        <strong>Ingredients:</strong>
+                        <ul>
+                            <li>2 medium sweet potatoes, peeled and diced into 1/2-inch cubes</li>
+                            <li>1 tbsp olive oil</li>
+                            <li>1/2 yellow onion, diced</li>
+                            <li>2 cloves garlic, minced</li>
+                            <li>4 cups kale, stems removed and chopped</li>
+                            <li>1/2 tsp smoked paprika</li>
+                            <li>Salt and freshly ground black pepper to taste</li>
+                            <li>Optional: 2-4 eggs (fried or poached) for topping</li>
+                            <li>Optional: fresh parsley or chives for garnish</li>
+                        </ul>
+                        <strong>Instructions:</strong>
+                        <ol>
+                            <li>Heat olive oil in a large non-stick skillet over medium-high heat.</li>
+                            <li>Add diced sweet potatoes. Cook for 8-12 minutes until tender and slightly caramelized.</li>
+                            <li>Add diced onion and cook for 3-5 minutes.</li>
+                            <li>Stir in minced garlic and smoked paprika. Cook for 1 minute.</li>
+                            <li>Add chopped kale. Cook for 3-5 minutes until wilted.</li>
+                            <li>Season with salt and pepper.</li>
+                            <li>If adding eggs, prepare them while hash cooks.</li>
+                            <li>Serve hot, topped with eggs if desired.</li>
+                        </ol>
+                        <strong>Nutrition Tips:</strong> Rich in complex carbohydrates for energy, high in vitamins A, C, and K from sweet potatoes and kale, and packed with fiber.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="container py-16 bg-cloud-white rounded-xl shadow-md my-8 p-8" id="disclaimer">
+        <h2 class="section-title">Important Disclaimer</h2>
+        <p class="text-gray-700 text-sm disclaimer-text">
+            Information on NutriyumNest (recipes, tips, community content) is for general informational purposes only; it is not medical, nutritional, or health advice. Always consult your physician or qualified health provider for health or dietary questions. Never disregard professional medical advice due to website content.
+            <br><br>
+            NutriyumNest does not endorse specific products or opinions. Reliance on our information is at your own risk; results vary. Nutritional information is an estimate; use a trusted calculator for precise data.
+            <br><br>
+            Before diet/lifestyle changes (especially with conditions, allergies, pregnancy, breastfeeding), consult a healthcare professional. Recipes/advice are not for diagnosis, treatment, cure, or prevention. Be mindful of your body. Discontinue use and seek medical attention for adverse reactions.
+            <br><br>
+            NutriyumNest is not responsible for adverse effects (e.g., allergic reactions, foodborne illnesses). Users are responsible for ingredient quality, food handling, and safe cooking. Exercise caution with kitchen equipment.
+            <br><br>
+            The "Nest Community" is for sharing experiences. NutriyumNest is not responsible for community content; use discretion and verify health information with professionals. Our goal is wellness inspiration, not professional guidance.
+            <br><br>
+            By using NutriyumNest, you agree to this disclaimer. Your engagement signifies understanding that this website is for general inspiration, not professional guidance.
+        </p>
+    </section>
+
+    <!-- Customer Satisfaction -->
+    <section class="container py-16" id="customer-satisfaction">
+        <h2 class="section-title">What Our Community Says</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-cloud-white p-6 rounded-lg shadow-md">
+                <p class="italic text-gray-700 customer-satisfaction-text">"NutriyumNest has completely transformed my approach to healthy eating. I used to think it was all about deprivation, but their recipes are so flavorful and satisfying. My family loves the 'Speedy Salmon' and the 'Cozy Lentil Soup' has become a weekly staple. It's truly a cozy corner for balanced eating!"</p>
+                <p class="font-semibold text-leaf-green mt-4">- Sarah M., Happy Home Cook</p>
+            </div>
+            <div class="bg-cloud-white p-6 rounded-lg shadow-md">
+                <p class="italic text-gray-700 customer-satisfaction-text">"As a busy professional, I struggled with meal planning. NutriyumNest's simple weekly plans and grocery lists have been a game-changer. The 'Quinoa & Black Bean Salad' is my go-to for healthy lunches. I feel more energized and less stressed about what to eat. Highly recommend!"</p>
+                <p class="font-semibold text-leaf-green mt-4">- David L., Wellness Enthusiast</p>
+            </div>
+            <div class="bg-cloud-white p-6 rounded-lg shadow-md">
+                <p class="italic text-gray-700 customer-satisfaction-text">"I love the positive and gentle tone of NutriyumNest. It's not about strict diets, but about nourishing your body. The 'Apple Cinnamon Baked Oats' are my new favorite breakfast, and the 'Creamy Avocado Pasta' is a revelation. Thank you for making healthy eating so enjoyable!"</p>
+                <p class="font-semibold text-leaf-green mt-4">- Emily R., Balanced Eater</p>
+            </div>
+            <div class="bg-cloud-white p-6 rounded-lg shadow-md">
+                <p class="italic text-gray-700 customer-satisfaction-text">"The 'Hearty Sweet Potato & Kale Hash' is simply delicious and so easy to make. I appreciate the focus on real, wholesome ingredients. NutriyumNest truly helps me fuel my day the nest way!"</p>
+                <p class="font-semibold text-leaf-green mt-4">- Jessica P., Health-Conscious Mom</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-berry-plum text-cloud-white py-8 mt-12 rounded-t-3xl">
+        <div class="container flex flex-col md:flex-row justify-between items-center md:items-start text-center md:text-left">
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-xl font-bold mb-2">NutriyumNest</h4>
+                <p class="text-sm">Where Wellness Meets Every Bite.</p>
+                <p class="text-sm mt-2">© 2024 NutriyumNest. All rights reserved.</p>
+            </div>
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-lg font-semibold mb-2">Contact Us</h4>
+                <p class="text-sm">123 Wellness Way,</p>
+                <p class="text-sm">Nourishville, NW 12345</p>
+                <p class="text-sm">Email: info@nutriyumnest.com</p>
+                <p class="text-sm">Phone: (555) 123-4567</p>
+            </div>
+            <nav>
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="index.html" class="text-cloud-white hover:text-honey-amber nav-link">Home</a></li>
+                    <li><a href="blog.html" class="text-cloud-white hover:text-honey-amber nav-link">Blog</a></li>
+                    <li><a href="privacy.html" class="text-cloud-white hover:text-honey-amber nav-link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="text-cloud-white hover:text-honey-amber nav-link">Terms of Service</a></li>
+                    <li><a href="cookies.html" class="text-cloud-white hover:text-honey-amber nav-link">Cookie Policy</a></li>
+                    <li><a href="contact.html" class="text-cloud-white hover:text-honey-amber nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
